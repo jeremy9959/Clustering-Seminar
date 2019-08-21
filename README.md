@@ -16,7 +16,7 @@ Visualization seeks ways to present the dataset graphically in a way that humans
 involve finding a reduction to, say, $2$ dimensions, visualizing the data there somehow, and then using the human eye to recognize clusters.
 
 **Goals:** The goal of this seminar is to explore the problem of rigorously characterizing clusters in data and of finding methods for discovering those
-clusters whose results can be characterized in terms of such a characterization.  
+clusters whose results can be related to this characterization.
 
 **Methods:** Initially, members of the seminar will explore the literature in search of existing work related to the seminar goal, and will present
 what they find to the group.  Over time, I hope we will begin to develop some new ideas in this field.
@@ -26,13 +26,12 @@ some mathematical sophistication, and a willingness to participate.
 
 **Time and Place:** To be determined.  If you are interested in participating, fill out the form below and I'll get back to you soon.
 
-<form name="seminar-survey" method="POST" action="https://formspree.io/jeremy.teitelbaum@uconn.edu">
+<form name="seminar-survey" method="POST" action="https://formspree.io/jeremy.teitelbaum@uconn.edu" id="fs-frm">
 <fieldset id="seminar-survey-inputs">
 <label for="full-name">Full Name</label>
 <input type="text" name="name" id="full-name" placeholder="First and Last">
 <label for="email-address">Email Address</label>
 <input type="email" name="_replyto" id="email-address" placeholder="your_name@uconn.edu" required="" id="email-address">
-
 <fieldset id="person-type">
 <label for="ptype">UConn position</label>
 <select name="ptype" id="type" required="">
