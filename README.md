@@ -3,11 +3,10 @@
   charset="utf-8"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 ></script>
-
-### Mathematics of Clustering and Related Problems
-
+<center>
+<h3> Mathematics of Clustering and Related Problems</h3>
 <img src="https://satijalab.org/img/tsne-example.png" width="400">
-
+</center>
 **Background:** Suppose we are given a large collection $X$ of points in a high dimensional real vector space $V$, as well as one or more 
 functions $\rho :V\times V\to {\bf R}$ that give some measure of similarity between points.  Our goal is to partition
 the set $X$ into subsets $X_i$ in such a way that the elements of a given subset are all similar to each other, while
