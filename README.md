@@ -1,4 +1,5 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+
 <center>
 <h3> Mathematics of Clustering and Related Problems</h3>
 <img src="https://satijalab.org/img/tsne-example.png" width="400">
