@@ -1,7 +1,7 @@
 ### Mathematics of Clustering and Related Problems
 
 
-<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiWr5mg5pTkAhWVCjQIHd_bBbsQjRx6BAgBEAQ&url=https%3A%2F%2Fsatijalab.org%2Fresearch%2F&psig=AOvVaw2L__3yxkhbb3LGN6i8XohU&ust=1566505594023832" width=300 align="center">
+<img src="https://satijalab.org/img/tsne-example.png" align="center">
 
 **Background:** Suppose we are given a large collection $X$ of points in a high dimensional real vector space $V$, as well as one or more 
 functions $\rho :V\times V\to {\bf R}$ that give some measure of similarity between points.  Our goal is to partition
@@ -29,6 +29,7 @@ some mathematical sophistication, and a willingness to participate.
 
 **Time and Place:** To be determined.  If you are interested in participating, fill out the form below and I'll get back to you soon.
 
+**Credits:** Image on top from the [Satija Lab](https://satijalab.org).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvvQaIB6jUgfqtgDw8M9BkFM-wD3_9z_LQUuc1eQQpqURnDg/viewform?embedded=true" width="640" height="1051" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
