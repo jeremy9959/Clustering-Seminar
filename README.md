@@ -26,9 +26,30 @@ some mathematical sophistication, and a willingness to participate.
 
 **Time and Place:** To be determined.  If you are interested in participating, fill out the form below and I'll get back to you soon.
 
-<form name="input" method="POST" action="https://formspree.io/jeremy.teitelbaum@uconn.edu">
-Name: <input type="text" name="Name">
+<form name="seminar-survey" method="POST" action="https://formspree.io/jeremy.teitelbaum@uconn.edu">
+<fieldset id="seminar-survey-inputs">
+<label for="full-name">Full Name</label>
+<input type="text" name="name" id="full-name" placeholder="First and Last">
+<label for="email-address">Email Address</label>
+<input type="email" name="_replyto" id="email-address" placeholder="your_name@uconn.edu" required="" id="email-address">
+
+<fieldset id="person-type">
+<label for="ptype">UConn position</label>
+<select name="ptype" id="type" required="">
+  <option value="Choose" selected="" disabled="">Choose</option>
+  <option value="Faculty">Faculty</option>
+  <option value="Grad">Grad Student</option>
+  <option value="Undergrad">Undergrad</option>
+  <option value="Other">Other</option>
+  </select>
+</fieldset>
+<label for="background">What is your area of study?</label>
+<textarea rows="3" name="background" id="background" placeholder="Field of research, major, advisor"></textarea>
+<input type="hidden" name="_subject" id="email-subject" value="Seminar Responses">
+</fieldset>
+<input type="submit" value="Submit">
 </form>
+
 
 
 
