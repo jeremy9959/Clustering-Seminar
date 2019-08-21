@@ -1,7 +1,12 @@
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
+
 ### Mathematics of Clustering and Related Problems
 
-
-<img src="https://satijalab.org/img/tsne-example.png"  width=400>
+<img src="https://satijalab.org/img/tsne-example.png" width="400">
 
 **Background:** Suppose we are given a large collection $X$ of points in a high dimensional real vector space $V$, as well as one or more 
 functions $\rho :V\times V\to {\bf R}$ that give some measure of similarity between points.  Our goal is to partition
