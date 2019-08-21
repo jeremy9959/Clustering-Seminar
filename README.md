@@ -8,7 +8,7 @@
 <img src="https://satijalab.org/img/tsne-example.png" width="400">
 </center>
 **Background:** Suppose we are given a large collection \(X \) of points in a high dimensional real vector space \(V\), as well as one or more 
-functions \( \rho :V\times V\to {\bf R} \) that give some measure of similarity between points.  Our goal is to partition
+functions $ \rho :V\times V\to {\bf R} $ that give some measure of similarity between points.  Our goal is to partition
 the set \( X )/ into subsets /( X_i )/ in such a way that the elements of a given subset are all similar to each other, while
 points chosen from different subsets are less similar.  Ideally, we would be able to characterize the sets \( X_i \) in 
 some way and thereby reveal structure in the original set /(X\).
