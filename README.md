@@ -1,5 +1,8 @@
 ### Mathematics of Clustering and Related Problems
 
+
+<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiWr5mg5pTkAhWVCjQIHd_bBbsQjRx6BAgBEAQ&url=https%3A%2F%2Fsatijalab.org%2Fresearch%2F&psig=AOvVaw2L__3yxkhbb3LGN6i8XohU&ust=1566505594023832" width=300 align="center">
+
 **Background:** Suppose we are given a large collection $X$ of points in a high dimensional real vector space $V$, as well as one or more 
 functions $\rho :V\times V\to {\bf R}$ that give some measure of similarity between points.  Our goal is to partition
 the set $X$ into subsets $X_i$ in such a way that the elements of a given subset are all similar to each other, while
