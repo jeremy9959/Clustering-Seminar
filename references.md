@@ -1,5 +1,10 @@
 # References
 
+- Hastie, et. al. 2009. [The Elements of Statistical Learning, 2ed](https://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print12.pdf)
+
+> *Chapter 14: In this chapter we address unsupervised learning, or "learning without a teacher"...we present those unsupervised learning
+techniques that are among the most commonly used in practice, and additionally, a few others that are favored by the authors.*
+
 - Cohen-Addad, et. al. 2017. [Hierarchical Clustering: Objective Functions and Algorithms](https://arxiv.org/pdf/1704.02147.pdf)
 
 >*We take an axiomatic approach to defining ‘good’ objective functions for both similarity and dissimilarity-based hierarchical clustering. We characterize a set of admissible objective functions ... that have the property that when the input admits a ‘natural’ ground-truth hierarchical clustering, the 
