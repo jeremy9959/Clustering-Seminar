@@ -32,5 +32,7 @@ some mathematical sophistication, and a willingness to participate.
 
 **Credits:** Image on top from the [Satija Lab](https://satijalab.org).
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvvQaIB6jUgfqtgDw8M9BkFM-wD3_9z_LQUuc1eQQpqURnDg/viewform?embedded=true" width="640" height="1051" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+**References:** See [this list of references](references.md).
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvvQaIB6jUgfqtgDw8M9BkFM-wD3_9z_LQUuc1eQQpqURnDg/viewform?embedded=true" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 

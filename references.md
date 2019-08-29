@@ -38,3 +38,7 @@ In this paper, we establish the NP-hardness of the k-means problem in the plane.
 - McLachlan, et. al. 2018.  [Finite Mixture Models](https://www.annualreviews.org/doi/full/10.1146/annurev-statistics-031017-100325).
 
 >*The aim of this article is to provide an up-to-date account of the theory and methodological developments underlying the applications of finite mixture models. Because of their flexibility, mixture models are being increasingly exploited as a convenient, semiparametric way in which to model unknown distributional shapes. This is in addition to their obvious applications where there is group-structure in the data or where the aim is to explore the data for such structure, as in a cluster analysis.*
+
+- Dhillon, et. al. 2004. [Kernel k-means, Spectral Clustering and Normalized Cuts](https://www.cs.utexas.edu/users/inderjit/public_papers/kdd_spectral_kernelkmeans.pdf)
+
+>*Kernel k-means and spectral clustering have both been usedto identify clusters that are non-linearly separable in inputspace. Despite significant research, these methods have re-mained only loosely related. In this paper, we give an ex-plicit theoretical connection between them.*
