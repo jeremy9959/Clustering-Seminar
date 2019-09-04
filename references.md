@@ -42,3 +42,8 @@ In this paper, we establish the NP-hardness of the k-means problem in the plane.
 - Dhillon, et. al. 2004. [Kernel k-means, Spectral Clustering and Normalized Cuts](https://www.cs.utexas.edu/users/inderjit/public_papers/kdd_spectral_kernelkmeans.pdf)
 
 >*Kernel k-means and spectral clustering have both been usedto identify clusters that are non-linearly separable in inputspace. Despite significant research, these methods have re-mained only loosely related. In this paper, we give an ex-plicit theoretical connection between them.*
+
+- Kleinberg, 2015. [An impossibility theorem for clustering](https://www.cs.cornell.edu/home/kleinber/nips15.pdf). 
+
+>*Here we suggest a formal perspective on the on the difficulty in finding [a unified framework for clustering] in the form of an impossibility theorem: for a set of three simple properties, we show that there is no clustering function satisfying all three.  Relaxations of
+these properties expose some of the interesting (and unavoidable) trade-offs at work in well-studied clustering techniques such as single-linkage, sum-of-pairs, k-means, and k-medians.*
