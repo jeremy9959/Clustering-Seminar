@@ -43,7 +43,19 @@ In this paper, we establish the NP-hardness of the k-means problem in the plane.
 
 >*Kernel k-means and spectral clustering have both been used to identify clusters that are non-linearly separable in input space. Despite significant research, these methods have remained only loosely related. In this paper, we give an explicit theoretical connection between them.*
 
-- Kleinberg, 2015. [An impossibility theorem for clustering](https://www.cs.cornell.edu/home/kleinber/nips15.pdf). 
+- Kleinberg, 2002. [An impossibility theorem for clustering](https://www.cs.cornell.edu/home/kleinber/nips15.pdf). 
 
 >*Here we suggest a formal perspective on the on the difficulty in finding [a unified framework for clustering] in the form of an impossibility theorem: for a set of three simple properties, we show that there is no clustering function satisfying all three.  Relaxations of
 these properties expose some of the interesting (and unavoidable) trade-offs at work in well-studied clustering techniques such as single-linkage, sum-of-pairs, k-means, and k-medians.*
+
+- Carlsson, G. and Memoli, F. JMLS, 2010. [Characterization, Stability and Convergence of Hierarchical Clustering Methods](http://www.jmlr.org/papers/volume11/carlsson10a/carlsson10a.pdf).
+
+>*We study hierarchical clustering schemes under an axiomatic view. We
+>show that within this framework, one can prove a theorem analogous to
+>one of Kleinberg (2002), in which one obtains an existence and
+>uniqueness theorem instead of a non-existence result. We explore
+>further properties of this unique scheme: stability and convergence
+>are established.  We represent dendrograms as ultrametric spaces and
+>use tools from metric geometry, namely the Gromov-Hausdorff distance,
+>to quantify the degree to which perturbations in the input metric
+>space affect the result of hierarchical methods.*
