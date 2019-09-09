@@ -19,20 +19,19 @@ reduction takes a high dimensional set and projects it into 2 or 3 dimensions, h
 Visualization seeks ways to present the dataset graphically in a way that humans can interpret it.    Many clustering methods
 involve finding a reduction to, say, 2 dimensions, visualizing the data there somehow, and then using the human eye to recognize clusters.
 
-**Goals:** The goal of this seminar is to explore the problem of rigorously characterizing clusters in data and of finding methods for discovering those
-clusters whose results can be related to this characterization.
+**Goals:** The goal of this seminar is to explore the problem of rigorously characterizing clusters in data and of finding methods for discovering those clusters whose results can be related to this characterization.  
 
-**Methods:** Initially, members of the seminar will explore the literature in search of existing work related to the seminar goal, and will present
-what they find to the group.  Over time, I hope we will begin to develop some new ideas in this field.
+**Methods:** Initially, members of the seminar will explore the literature in search of existing work related to the seminar goal, and will present what they find to the group.  Over time, I hope we will begin to develop some new ideas in this field.
 
 **Prerequisites:** This is an exploratory project and there are no formal prerequisites beyond  a command of linear algebra,
 some mathematical sophistication, and a willingness to participate.
 
-**Time and Place:** To be determined.  If you are interested in participating, fill out the form below and I'll get back to you soon.
+**Time and Place:** Tuesdays at 2 p.m. in Monteith 313.
 
 **Credits:** Image on top from the [Satija Lab](https://satijalab.org).
 
 **References:** See [this list of references](references.md).
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvvQaIB6jUgfqtgDw8M9BkFM-wD3_9z_LQUuc1eQQpqURnDg/viewform?embedded=true" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+**For more information:** Contact Jeremy Teitelbaum (fname.lname@uconn.edu)
+
 
