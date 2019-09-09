@@ -59,3 +59,12 @@ these properties expose some of the interesting (and unavoidable) trade-offs at 
 >use tools from metric geometry, namely the Gromov-Hausdorff distance,
 >to quantify the degree to which perturbations in the input metric
 >space affect the result of hierarchical methods.*
+
+- Abbe, Bandeira, and Hall.  [Exact Recovery in the Stochastic Block Model](https://arxiv.org/pdf/1405.3267.pdf)
+
+>*The stochastic block model (SBM) with two communities, or equivalently the planted bisection model, is a popular model of
+> random graph exhibiting a cluster behaviour. In the symmetric case, the graph has two equally sized clusters and vertices connect with probability $p$ 
+> within clusters and $q$ across clusters. In the past two decades, a large body of literature in statistics and computer science has focused 
+> on providing lower-bounds on the scaling of $|p−q|$ to ensure exact recovery. In this paper, we identify a sharp threshold phenomenon 
+> for exact recovery ... that improves the existing bounds.*  (Thanks to Zhongyang Li for pointing out this paper; the Stochastic Block Model
+> seems very relevant).
