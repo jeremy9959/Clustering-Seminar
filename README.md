@@ -19,6 +19,8 @@ reduction takes a high dimensional set and projects it into 2 or 3 dimensions, h
 Visualization seeks ways to present the dataset graphically in a way that humans can interpret it.    Many clustering methods
 involve finding a reduction to, say, 2 dimensions, visualizing the data there somehow, and then using the human eye to recognize clusters.
 
+Other information is available in these [introductory slides](./Talks/20191010.html).
+
 **Goals:** The goal of this seminar is to explore the problem of rigorously characterizing clusters in data and of finding methods for discovering those clusters whose results can be related to this characterization.  
 
 **Methods:** Initially, members of the seminar will explore the literature in search of existing work related to the seminar goal, and will present what they find to the group.  Over time, I hope we will begin to develop some new ideas in this field.
@@ -33,5 +35,6 @@ some mathematical sophistication, and a willingness to participate.
 **References:** See [this list of references](references.md).
 
 **For more information:** Contact Jeremy Teitelbaum (fname.lname@uconn.edu)
+
 
 

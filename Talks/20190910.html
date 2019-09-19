@@ -58,6 +58,10 @@ Organizational Meeting
 <li><p><em>Spectral embedding</em> For a graph, projects the nodes into coordinates given by most significant eigenvalues of the laplacian</p></li>
 <li><p><em>non-linear, or manifold methods such as tSNE</em> tSNE converts the data into a graph, and the graph into a probability distribution and then tries to model that distribution in low-dimensional space with the least distortion.</p></li>
 </ul>
+</div><div id="tsne-in-action" class="slide section level2">
+<h1>tSNE in action</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0UMnhWNOxQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </div><div id="example" class="slide section level2">
 <h1>Example</h1>
 <p>As a demonstration of the 10x genomics single cell sequencing platform, 1.3M brain cells were sequenced from two mice. The output of the experiment is a matrix with 1 row for each cell and 1 column for each gene; the entries count the number of RNA molecules transcribed from that gene in that cell. There are about 30K genes. So we have a matrix of integers that is 1.3M by 30k entries.</p>
@@ -87,7 +91,7 @@ Organizational Meeting
 <img src="./football_clusters.png" alt="Dots are teams, colors are conferences, tSNE embedding" />
 <p class="caption">Dots are teams, colors are conferences, tSNE embedding</p>
 </div>
-<p>Clusters are visible by need another technique to formally identify them.</p>
+<p>Clusters are visible but need another technique to formally identify them.</p>
 </div><div id="finite-metric-spaces" class="slide section level2">
 <h1>Finite metric spaces</h1>
 <p>There are theoretical results on clustering obtained by viewing the problem as one of finite metric spaces.</p>
@@ -99,10 +103,9 @@ Organizational Meeting
 </ul>
 </div><div id="some-thoughts-on-theoretical-questions" class="slide section level2">
 <h1>Some thoughts on theoretical questions</h1>
+<p>What is a cluster? It would be interesting just to survey the different definitions that are “out there.” Suppose that a “cluster” (whatever that is) exists after some kind of dimensionality reduction. Can one say something definitive about the original data?</p>
 <p>What kind of definitive theoretical results about these various approaches exist?</p>
-<p>In the broadest terms, suppose one of these approaches says a cluster exists. Can one say something definitive about the original data?</p>
-<p>For an algorithm like tSNE, how specifically can one reconstruct information about the original data from the fact that points are placed close together?</p>
-<p>Can one compare the “clusters” that arise from different methods in some way?</p>
+<p>Can one compare the “clusters” that arise from different methods in some way? What’s the right way to evaluate a clustering method?</p>
 </div>
 </body>
 </html>
