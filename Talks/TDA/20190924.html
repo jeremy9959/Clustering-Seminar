@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topological Approach to Hierarchical Clustering September 24, 2019</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Topological Approach to Hierarchical Clustering September 24, 2019</h1>
+</header>
+<h1 id="references">References</h1>
+<p>Carlsson and Memoli, Classifying Clustering Schemes, Foundations of Computational Mathematics, vol. 13, no. 2, pp. 221-252</p>
+<p><a href="https://link.springer.com/article/10.1007/s10208-012-9141-9">See</a></p>
+<h1 id="persistent-sets-and-dendrograms">Persistent Sets and Dendrograms</h1>
+<p>Let <span class="math inline"><em>X</em></span> be a finite metric space. Let <span class="math inline">𝒫(<em>X</em>)</span> be the set of partitions of <span class="math inline"><em>X</em></span>, where a <em>partition</em> is a disjoint covering of <span class="math inline"><em>X</em></span> by subsets.</p>
+<p>A <em>persistent set</em> <span class="math inline"><em>P</em></span> is a pair <span class="math inline">(<em>X</em>, <em>θ</em>)</span> where <span class="math inline"><em>θ</em> : <strong>R</strong><sub> ≥ 0</sub> → 𝒫(<em>X</em>)</span> is a function with the property that:</p>
+<ul>
+<li>if <span class="math inline"><em>r</em> ≤ <em>s</em></span>, then <span class="math inline"><em>θ</em>(<em>r</em>)</span> is a refinement of <span class="math inline"><em>θ</em>(<em>s</em>)</span></li>
+<li>for any <span class="math inline"><em>r</em></span>, there is an <span class="math inline"><em>ϵ</em> &gt; 0</span> so that <span class="math inline"><em>θ</em>(<em>r</em> + <em>x</em>) = <em>θ</em>(<em>r</em>)</span> for all <span class="math inline"><em>x</em> ∈ [<em>r</em>, <em>r</em> + <em>ϵ</em>]</span>.</li>
+</ul>
+<p>If, for large enough <span class="math inline"><em>r</em></span>, <span class="math inline"><em>θ</em>(<em>r</em>)</span> is the partition with a single block equal to <span class="math inline"><em>X</em></span>, we say <span class="math inline"><em>P</em></span> is a dendrogram.</p>
+<h1 id="linkage-functions">Linkage functions</h1>
+<p>Let <span class="math inline">ℓ</span> be a real-valued function on pairs of subsets of <span class="math inline"><em>X</em></span>. We think of <span class="math inline">ℓ</span> as measuring the distance between two set; such a function is called a linkage function.</p>
+<ul>
+<li>single linkage: <span class="math inline">ℓ(<em>B</em>, <em>B</em>′)</span> is the distance between the closest points of <span class="math inline"><em>B</em></span> and <span class="math inline"><em>B</em>′</span>,</li>
+<li>complete linkage: <span class="math inline">ℓ(<em>B</em>, <em>B</em>′)</span> is the distance between the farthest points of <span class="math inline"><em>B</em></span> and <span class="math inline"><em>B</em>′</span>,</li>
+<li>average linkage: <span class="math inline">ℓ(<em>B</em>, <em>B</em>′)</span> is the average distance between pairs of points in <span class="math inline"><em>B</em></span> and <span class="math inline"><em>B</em>′</span></li>
+<li>Ward’s criterion: <span class="math inline">ℓ(<em>B</em>, <em>B</em>′)</span> is the change in the variance resulting from merging <span class="math inline"><em>B</em></span> and <span class="math inline"><em>B</em>′</span>.</li>
+</ul>
+<h1 id="clustering-from-linkage">Clustering from linkage</h1>
+<p>In traditional clustering, one finds the “closest clusters” and merges them. This is sensitive to choices. A more canonical approach is the following.</p>
+<p>For each <span class="math inline"><em>r</em> &gt; 0</span>, define an equivalence relation <span class="math inline">∼<sub>ℓ, <em>r</em></sub></span> by saying two blocks <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span> are <span class="math inline"><em>r</em></span>-equivalent if there is a sequence of blocks starting at <span class="math inline"><em>A</em></span> and ending at <span class="math inline"><em>B</em></span> with the distance between successive blocks at most <span class="math inline"><em>r</em></span>.</p>
+<p>Let <span class="math inline"><em>Θ</em><sub>1</sub></span> be the partition of <span class="math inline"><em>X</em></span> into single points. Inductively define <span class="math inline"><em>Θ</em><sub><em>i</em> + 1</sub></span> by letting <span class="math inline"><em>r</em><sub><em>i</em></sub></span> be the minimum linkage distance between distinct blocks in <span class="math inline"><em>Θ</em><sub><em>i</em></sub></span>, and then letting <span class="math inline"><em>Θ</em><sub><em>i</em> + 1</sub></span> be the equivalence classes of <span class="math inline"><em>Θ</em><sub><em>i</em></sub></span> under the <span class="math inline"><em>r</em><sub><em>i</em></sub></span> equivalence relation.</p>
+<p>Define a function <span class="math inline"><em>θ</em></span> that jumps from <span class="math inline"><em>Θ</em><sub><em>i</em></sub></span> to <span class="math inline"><em>Θ</em><sub><em>i</em> + 1</sub></span> at <span class="math inline"><em>r</em><sub><em>i</em></sub></span> and is constant between the <span class="math inline"><em>r</em><sub><em>i</em></sub></span>.</p>
+<h1 id="functoriality">Functoriality</h1>
+<ul>
+<li>Let <span class="math inline">ℳ</span> be the category of finite metric spaces with injective, distance non-increasing maps.</li>
+<li>Persistent sets form a category where the requirement is that if <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> then <span class="math inline"><em>f</em><sup> − 1</sup>(<em>θ</em><sub><em>Y</em></sub>(<em>r</em>))</span> is a refinement of <span class="math inline"><em>θ</em><sub><em>X</em></sub>(<em>r</em>)</span> for all <span class="math inline"><em>r</em></span>.</li>
+</ul>
+<p>Carlsson-Memoli ask what it means to require that a clustering method is “functorial”. In other words, how do the clusters behave under maps between the underlying spaces.</p>
+<h1 id="main-result">Main Result</h1>
+<p>Let <span class="math inline"><em>H</em></span> be any clustering method which is</p>
+<ul>
+<li>functorial from metric spaces to persistent sets;</li>
+<li>preserves the underlying set, in the sense that if <span class="math inline"><em>β</em></span> is the forgetful functor from persistent sets to the underlying set, and <span class="math inline"><em>α</em></span> is the forgetful functor from metric spaces to sets, then <span class="math inline"><em>β</em><em>H</em> = <em>α</em></span>.</li>
+<li>Carries the two point metric space, whose points are at distance <span class="math inline"><em>δ</em></span>, to the persistent set that is the trivial partition for <span class="math inline"><em>r</em> &lt; <em>δ</em></span> and the one-block partition for <span class="math inline"><em>r</em> ≥ <em>δ</em></span>.</li>
+<li>For any <span class="math inline"><em>X</em></span>, let <span class="math inline"><em>s</em></span> be the minimum distance among any pair of points in <span class="math inline"><em>X</em></span> (this is called the separation of <span class="math inline"><em>X</em></span>). Then <span class="math inline"><em>H</em>(<em>X</em>)</span> is the trivial partition for all <span class="math inline"><em>t</em> &lt; <em>s</em></span>.</li>
+</ul>
+<p>Then <span class="math inline"><em>H</em></span> is single linkage clustering.</p>
+<h1 id="what-goes-wrong-in-other-cases">What goes wrong in other cases</h1>
+<figure>
+<img src="./image.png" alt="From Carlsson-Memoli" /><figcaption>From Carlsson-Memoli</figcaption>
+</figure>
+</body>
+</html>
