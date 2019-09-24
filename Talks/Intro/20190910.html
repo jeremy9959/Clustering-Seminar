@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Organizational Meeting" />
+  <meta name="date" content="2019-09-10" />
+  <title>Clustering Seminar</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Clustering Seminar</h1>
+  <p class="author">
+Organizational Meeting
+  </p>
+  <p class="date">September 10, 2019</p>
+</div>
+<div id="approaches-to-clustering" class="title-slide slide section level1"><h1>Approaches to clustering</h1></div><div id="k-means" class="slide section level2">
+<h1>k-means</h1>
+<p>In general, pick <span class="math inline">\(k\)</span> random points in the space. Take the points in the dataset closest to each point and compute their center of mass. Replace the <span class="math inline">\(k\)</span> points by these centers of mass and repeat the process.</p>
+<div class="figure">
+<img src="./kmeans.png" alt="Example of K-means Result" />
+<p class="caption">Example of K-means Result</p>
+</div>
+</div><div id="hierarchical-clustering" class="slide section level2">
+<h1>Hierarchical clustering</h1>
+<p>Define a distance measure between sets of points in the space. Start with every cluster being a single point. Choose the closest clusters and combine them. Repeat until there is only one cluster. The sequence of joinings gives a tree that describes the hierarchical clustering.</p>
+<div class="figure">
+<img src="./reveal.png" alt="Clustering reveals structure" />
+<p class="caption">Clustering reveals structure</p>
+</div>
+</div><div id="graph-communities" class="slide section level2">
+<h1>Graph communities</h1>
+<p>Louvain clustering: An iterative method that tries to maximize a clustering measure called ‘modularity.’ If the nodes of a graph are partitioned into clusters, then the modularity is essentially the ratio of the edges that lie entirely within the clusters over the expected number of such edges if the edges of the graph were rearranged at random in a certain sense. Louvain clustering is a type of hierarchical clustering that iteratively increases this measure.</p>
+<p>Data can be converted to a graph by connected points to their nearest neighbors, according to some metric.</p>
+</div><div id="mixtures" class="slide section level2">
+<h1>Mixtures</h1>
+<p>One assumes that the data arose from a “mixture distribution” which is a sum of probability distributions. For example, one could assume that points in the plane arose from a sum of <span class="math inline">\(n\)</span> gaussian distributions. A maximum likelihood computation will give you the means and variances of these distributions; and then each point can be assigned to the distribution that was most likely to have produced it.</p>
+</div><div id="dimensionality-reduction" class="slide section level2">
+<h1>Dimensionality Reduction</h1>
+<p>Clustering algorithms typically begin with a dimensionality reduction.</p>
+<ul>
+<li><p><em>Principal component analysis</em> Projects the data into lower dimensional subspace spanned by the directions where the variation is maximal.</p></li>
+<li><p><em>Spectral embedding</em> For a graph, projects the nodes into coordinates given by most significant eigenvalues of the laplacian</p></li>
+<li><p><em>non-linear, or manifold methods such as tSNE</em> tSNE converts the data into a graph, and the graph into a probability distribution and then tries to model that distribution in low-dimensional space with the least distortion.</p></li>
+</ul>
+</div><div id="tsne-in-action" class="slide section level2">
+<h1>tSNE in action</h1>
+<iframe width="800" height="800" src="https://www.youtube.com/embed/0UMnhWNOxQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div><div id="example" class="slide section level2">
+<h1>Example</h1>
+<p>As a demonstration of the 10x genomics single cell sequencing platform, 1.3M brain cells were sequenced from two mice. The output of the experiment is a matrix with 1 row for each cell and 1 column for each gene; the entries count the number of RNA molecules transcribed from that gene in that cell. There are about 30K genes. So we have a matrix of integers that is 1.3M by 30k entries.</p>
+<p>The RNA expression data characterizes the operational state of the cell.</p>
+</div><div id="clustering-result" class="slide section level2">
+<h1>Clustering result</h1>
+<div class="figure">
+<img src="./scanpy_demo_rna.png" alt="tSNE dimension reduction applied to RNA seq data" />
+<p class="caption">tSNE dimension reduction applied to RNA seq data</p>
+</div>
+<ul>
+<li>Data is treated as a graph based on notion of nearest neighbors</li>
+<li>tSNE algorithm creates a two-dimensional representation</li>
+<li>colors show “Louvain communities” in the graph</li>
+</ul>
+<p>tSNE puts Louvain Communities near each other.</p>
+<p>Question: Why does tSNE respect the Louvain communities in this way?</p>
+</div><div id="another-example" class="slide section level2">
+<h1>Another example</h1>
+<div class="figure">
+<img src="./football.png" alt="Nodes are football teams, edges are games, yellow=‘Big Ten’" />
+<p class="caption">Nodes are football teams, edges are games, yellow=‘Big Ten’</p>
+</div>
+<p>graphE algorithm uses probability that a node A occurs in a short random walk starting at B to create distances.</p>
+<p>tSNE embedding in dimension 2 identifies conferences.</p>
+<div class="figure">
+<img src="./football_clusters.png" alt="Dots are teams, colors are conferences, tSNE embedding" />
+<p class="caption">Dots are teams, colors are conferences, tSNE embedding</p>
+</div>
+<p>Clusters are visible but need another technique to formally identify them.</p>
+</div><div id="finite-metric-spaces" class="slide section level2">
+<h1>Finite metric spaces</h1>
+<p>There are theoretical results on clustering obtained by viewing the problem as one of finite metric spaces.</p>
+<ul>
+<li><p>Kleinberg’s theorem: There is no clustering algorithm that is symmetric, scale invariant, and consistent.</p>
+<p>In particular, Take a finite set <span class="math inline">\(X\)</span>. A similarity function is a function <span class="math inline">\(d:X\times X\to \mathbf{R}\)</span> that is symmetric and zero only on the diagonal.</p>
+<p>A clustering method <span class="math inline">\(F\)</span> is a function from the set of such <span class="math inline">\(D\)</span> to the partitions of <span class="math inline">\(X\)</span>. We say that <span class="math inline">\(F\)</span> is scale invariant if <span class="math inline">\(F(\alpha d)\)</span> gives the same cluster as <span class="math inline">\(F\)</span> for any <span class="math inline">\(\alpha&gt;0\)</span>; we say that <span class="math inline">\(F\)</span> is rich if it is surjective onto the set of partitions; and we say that <span class="math inline">\(F\)</span> is consistent if it agrees on two distance functions <span class="math inline">\(d\)</span> and <span class="math inline">\(d&#39;\)</span> whenever <span class="math inline">\(d&#39;\)</span> is smaller than <span class="math inline">\(d\)</span> for two points in the same cluster, and <span class="math inline">\(d&#39;\)</span> is bigger than <span class="math inline">\(d\)</span> for two points in different clusters. There is no clustering function that is scale invariant, rich, and consistent.</p></li>
+<li><p>Carlsson-Memoli: Hierarchical clustering of a particularly simple form has good theoretical properties although it is frowned on in practice. Uses ideas of Gromov on the distances between metric spaces.</p></li>
+</ul>
+</div><div id="some-thoughts-on-theoretical-questions" class="slide section level2">
+<h1>Some thoughts on theoretical questions</h1>
+<p>What is a cluster? It would be interesting just to survey the different definitions that are “out there.” Suppose that a “cluster” (whatever that is) exists after some kind of dimensionality reduction. Can one say something definitive about the original data?</p>
+<p>What kind of definitive theoretical results about these various approaches exist?</p>
+<p>Can one compare the “clusters” that arise from different methods in some way? What’s the right way to evaluate a clustering method?</p>
+</div>
+</body>
+</html>
