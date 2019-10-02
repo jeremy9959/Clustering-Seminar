@@ -71,3 +71,15 @@
 - Carlsson, Bull. AMS. 46:2, 2009.  [Topology and Data][https://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf]
 
 >*In this paper, we will discuss how geometry and topology can be applied to make useful contributions to the analysis of various kinds of data....Although clustering is clearly a very important part of data analysis, the ways in which it is formulated and implemented are fraught with ambiguities.  In particular, the arbitrariness of various threshhold choices and lack of robustness are difficulties one confronts.  Much of current research efforts are focused in this direction (see, e.g., [43] and [39]), and functoriality provides the right general mathematical framework for addressing them.*
+
+## References cited during talks
+
+- Lee, Maslove, Dubin. PLOS One, 2015.  [Personalized Mortality Prediction Driven by Electronic Medical Data and a Patient Similarity Metric](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127428)
+
+>*Clinical outcome prediction normally employs static, one-size-fits-all models that perform well for the average patient but are sub-optimal for individual patients with unique characteristics. In the era of digital healthcare, it is feasible to dynamically personalize decision support by identifying and analyzing similar past patients, in a way that is analogous to personalized product recommendation in e-commerce. Our objectives were: 1) to prove that analyzing only similar patients leads to better outcome prediction performance than analyzing all available patients, and 2) to characterize the trade-off between training data size and the degree of similarity between the training data and the index patient for whom prediction is to be made.*
+
+- Johnson, Stone, Celi, Pollard. J. Am. Med Inform Assoc, January, 2018.  [The MIMIC Code Repository: enabling reproducibility in critical care research](https://www.ncbi.nlm.nih.gov/pubmed/29036464).
+
+>*Lack of reproducibility in medical studies is a barrier to the generation of a robust knowledge base to support clinical decision-making. In this paper we outline the Medical Information Mart for Intensive Care (MIMIC) Code Repository, a centralized code base for generating reproducible studies on an openly available critical care dataset.*
+
+
