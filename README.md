@@ -36,8 +36,8 @@ some mathematical sophistication, and a willingness to participate.
 
 **Talks:** 
 
-	- Jeremy Teitelbaum, [Introductory Talk on Clustering](/Clustering-Seminar/Talks/Intro/20190910.pdf)
-	- Guojan Gan, [Scalable Clustering by Truncated Fuzzy c-means](/Clustering-Seminar/Talks/Gan/201910tfc.pdf)
+- Jeremy Teitelbaum, [Introductory Talk on Clustering](/Clustering-Seminar/Talks/Intro/20190910.pdf)
+- Guojan Gan, [Scalable Clustering by Truncated Fuzzy c-means](/Clustering-Seminar/Talks/Gan/201910tfc.pdf)
 
 **For more information:** Contact Jeremy Teitelbaum (fname.lname@uconn.edu)
 
