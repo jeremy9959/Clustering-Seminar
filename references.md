@@ -68,7 +68,7 @@
 > for exact recovery ... that improves the existing bounds.*  (Thanks to Zhongyang Li for pointing out this paper; the Stochastic Block Model
 > seems very relevant).
 
-- Carlsson, Bull. AMS. 46:2, 2009.  [Topology and Data][https://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf]
+- Carlsson, Bull. AMS. 46:2, 2009.  [Topology and Data](https://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf)
 
 >*In this paper, we will discuss how geometry and topology can be applied to make useful contributions to the analysis of various kinds of data....Although clustering is clearly a very important part of data analysis, the ways in which it is formulated and implemented are fraught with ambiguities.  In particular, the arbitrariness of various threshhold choices and lack of robustness are difficulties one confronts.  Much of current research efforts are focused in this direction (see, e.g., [43] and [39]), and functoriality provides the right general mathematical framework for addressing them.*
 
