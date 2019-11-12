@@ -38,6 +38,7 @@ some mathematical sophistication, and a willingness to participate.
 
 - Jeremy Teitelbaum, [Introductory Talk on Clustering](/Clustering-Seminar/Talks/Intro/20190910.pdf)
 - Guojan Gan, [Scalable Clustering by Truncated Fuzzy c-means](/Clustering-Seminar/Talks/Gan/201910tfcm.pdf)
+- Jason (Cory) Brunson, [Metadata as ground truth for community detection](/Clustering-Seminar/Talks/Brunson/2019-11-12-ground-truth.pdf)
 
 **For more information:** Contact Jeremy Teitelbaum (fname.lname@uconn.edu)
 
